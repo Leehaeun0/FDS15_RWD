@@ -3,3 +3,8 @@
 body, body *, body *::before, body *::after{
   box-sizing: border-box;
 }
+/* 공통 레이아웃 */
+.container, .appMain{
+  display: flex;
+  flex-flow: row wrap;
+}
