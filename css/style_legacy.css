@@ -4,7 +4,7 @@
 @import url(./module/a11y.css);
 @import url(./typography/textstyle.css);
 @import url(./module/designpart.css);
-@import url(./style/public_legcy.css);
+@import url(./style/public_legacy.css);
 @import url(./style/background.css);
 
 body{

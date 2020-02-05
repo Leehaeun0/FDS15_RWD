@@ -14,3 +14,68 @@ body{
   min-height: auto;
   height: 100%;
 }
+/* 헤더 */
+.appHeader{
+  background-color: #38302e;
+  padding: 50px 20px 1em;
+  position: relative;
+}
+/* 멤버 서비스 */
+.memberOnly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #988574;
+  height: 50px;
+  color: #fff;
+  text-align: right;
+  padding: 4px 10px 4px 0;
+}
+.memberOnly li, .memberOnly a{
+  display: inline-block;
+  line-height: 42px;
+}
+.memberOnly a{
+  padding: 0 0.8em;
+}
+/* 검색 폼 */
+.searchForm{
+  overflow: hidden;
+}
+input[name="search"]{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 35px;
+  margin-right: 5px;
+  padding-left: 1em;
+  /* width: 88%; */
+  width: calc(100% - 45px);
+  vertical-align: middle;
+  float: left;
+}
+.buttonSearch{
+  float: right;
+  vertical-align: middle;
+  width: 35px;
+  /* max-width: 35px; */
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  font-size: 0.8em;
+  position: relative;
+  background-color: transparent;
+}
+.buttonSearch::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-image: url(./../images/btn_search.png);
+  background-size: contain;
+}
