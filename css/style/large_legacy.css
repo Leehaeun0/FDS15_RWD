@@ -7,7 +7,32 @@ body{
 }
 .appHeader{
   width: 1000px;
+  position: relative;
 }
+/* 로고 */
+.brand{
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -30px;
+}
+/* 검색 폼 */
+.searchForm{
+  text-align: right;
+}
+input[name="search"]{
+  width: 400px;
+}
+.buttonSearch{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #988574;
+  color: #fff;
+  height: 35px;
+  vertical-align: middle;
+}
+
 .appMain{
   width: 1020px;
 }
