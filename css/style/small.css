@@ -28,36 +28,13 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
-.brand a{
-  display: block;
-}
 .memberOnly{
   order: -1;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
   background-color: rgb(152, 133, 116);
   color: #fff;
 }
-.memberOnly li{
-  display: flex;
-  align-items: center;
-  padding: 5px 0;
-}
-.memberOnly li:last-child{
-  margin-right: -0.715em;
-}
-.memberOnly a{
-  padding: 0.5em 0.715em;
-}
 input[name="search"]{
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  height: 35px;
-  margin-right: 5px;
-  padding-left: 1em;
   width: calc(100% - 45px);
-  vertical-align: middle;
 }
 .buttonSearch{
   vertical-align: middle;
