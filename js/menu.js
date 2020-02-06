@@ -2,8 +2,8 @@
 const nav = document.querySelector('.appNavigation');
 const btn = nav.querySelector('.buttonBurger');
 const list = nav.querySelector('.menu__list');
-const items = nav.querySelectorAll('.menu__item');
-const links = nav.querySelectorAll('.menu__link');
+const items = list.querySelectorAll('.menu__item');
+const links = list.querySelectorAll('.menu__link');
 // 상태 변수
 let mode = null;
 let isPristine = true;
