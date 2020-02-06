@@ -50,8 +50,6 @@ input[name="search"]{
 /* 내비게이션 */
 .appNavigation{
   position: relative;
-  /* height: 100px;
-  background: blue; */
 }
 /* 메인 메뉴 제어 버튼 */
 .buttonBurger{
@@ -76,6 +74,18 @@ input[name="search"]{
   top: 100%;
   transform: translateY(-100%);
 }
+/* .menu--isAct 클래스가 버튼의 부모요소에 추가 되었을 때 */
+.menu--isAct .positionTop{
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.menu--isAct .positionMiddle{
+  transform: translate(-105%, -50%);
+}
+.menu--isAct .positionBottom{
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
 .burgerBar{
   position: absolute;
   left:0;
@@ -83,6 +93,7 @@ input[name="search"]{
   width: 100%;
   height: 20%;
 }
+
 /* 메인 메뉴 */
 .menu__list{
   position: fixed;
