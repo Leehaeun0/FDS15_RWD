@@ -5,17 +5,6 @@ body{
 .appHeader, .appMain, .appFooter{
   width: 100%;
 }
-.appNavigation{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 70vw;
-  height: 100vh;
-  transform:translate(-100%);
-}
-.book, .news, .board, .favorite, .twitter{
-  width: 100%;
-}
 /* 헤더 */
 .appHeader{
   display: flex;
@@ -57,4 +46,21 @@ input[name="search"]{
   left: 0;
   background-image: url(./../images/btn_search.png);
   background-size: contain;
+}
+/* 메뉴 제어 버튼 */
+.buttonBurger{
+  background: red;
+}
+/* 메인 메뉴 */
+.menu__list{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  transform:translate(-100%);
+}
+/* 메인 콘텐츠 */
+.book, .news, .board, .favorite, .twitter{
+  width: 100%;
 }

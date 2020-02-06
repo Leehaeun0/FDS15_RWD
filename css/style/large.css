@@ -28,15 +28,17 @@ body{
   margin: 0;
   justify-content: center;
   /* grid-area: brand; */
+  flex-grow: 2;
 }
 
 /* 멤버 서비스 */
 .memberOnly{
   /* grid-area: member; */
+  flex-grow:1;
 }
 /* 검색 폼 */
 .searchForm{
-  height: 60px;
+  flex-grow: 1;
   text-align: right;
   /* grid-area: search; */
 }
