@@ -55,10 +55,16 @@ input[name="search"]{
 .buttonBurger{
   width: 35px;
   height: 35px;
-  background: red;
   position: absolute;
   top: 60px;
   right: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.buttonNone{
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 .round{
   border-radius: 20px;
@@ -80,11 +86,12 @@ input[name="search"]{
   transform: translateY(-50%) rotate(45deg);
 }
 .menu--isAct .positionMiddle{
+  top: 50%;
   transform: translate(-105%, -50%);
 }
 .menu--isAct .positionBottom{
   top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg) ;
 }
 .burgerBar{
   position: absolute;
@@ -92,17 +99,48 @@ input[name="search"]{
   background: #fff;
   width: 100%;
   height: 20%;
+  /* transition: all .2s; */
 }
-
 /* 메인 메뉴 */
 .menu__list{
   position: fixed;
   top: 0;
   left: 0;
-  width: 70vw;
+  width: 70%;
   height: 100vh;
   transform:translate(-100%);
+  background: hsla(0, 0%, 0%, 0.75);
+  color: #fff;
+  padding: 2rem;
+  /* transition: transform .2s ease-in-out; */
 }
+.menu__item{
+  margin: 1rem 0;
+}
+.menu__link{
+  font-size: 1.6rem;
+  font-weight: 900;
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+.menu__subMenu{
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menu__subMenu li{
+  margin: 1rem 0;
+}
+.menu__subMenu a{
+  display: block;
+  padding: .5rem 1rem;
+}
+.menu--isAct .menu__list{
+  transform: none;
+}
+.menu__item--menuAct .menu__subMenu{
+  display: block;
+} 
 /* 메인 콘텐츠 */
 .book, .news, .board, .favorite, .twitter{
   width: 100%;
